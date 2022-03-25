@@ -10,7 +10,7 @@ var http = require('https');
 exports.logExecuteData = [];
 
 function logData(req) {
-    exports.logExecuteData.push({
+    /*exports.logExecuteData.push({
         body: req.body,
         headers: req.headers,
         trailers: req.trailers,
@@ -28,7 +28,7 @@ function logData(req) {
         protocol: req.protocol,
         secure: req.secure,
         originalUrl: req.originalUrl
-    });
+    });*/
     console.log("body: " + util.inspect(req.body));
     console.log("headers: " + req.headers);
     console.log("trailers: " + req.trailers);
